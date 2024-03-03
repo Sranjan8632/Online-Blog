@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Panda</title>
+    <link rel="stylesheet" href="style/style.css" />
+   
+</head>
+
+
+
+  <body>
+    <header>
+      <div class="banner">
+        
+      </div>
+    </header>
+    <nav class="stic">
+      <a href="index.html" target="_self">Home</a>
+      <a href="games.html" target="_self">Games</a>
+      <a href="gblogs.html" target="_self">Blogs</a>
+      <a href="favourites.html" target="_self">Favourites</a>
+      <a href="cart.html" target="_self">Cart</a>
+      <a href="about-me.html" target="_blank">About Me</a>
+      <button  type="button"> Sign Up</button>
+       <input class="p" type="email" placeholder="Email">
+    
+    </nav>
+    <main>
+
+       
+      <a href="javascript:void(0);" ondblclick="addToCart('Apex Legends')">
+        <img class="gimg" src="./image/apex legends.jpg" alt="apex legends">
+    </a> 
+       <a href="https://store.epicgames.com/en-US/p/fall-guys"> <img class="gimg" src="./image/fall guys.jpeg" alt="fall guys"></a>
+       <a href="https://store.steampowered.com/app/570/Dota_2/"> <img class="gimg" src="./image/dota 2.jpg" alt="dota 2"></a>
+       <a href="https://store.epicgames.com/en-US/p/genshin-impact"> <img class="gimg" src="./image/genshin impact.jpg" alt="genshin impact"></a>
+       <a href="https://store.epicgames.com/en-US/p/fortnite"><img class="gimg" src="./image/fortnite.jpg" alt="fortnite"></a>
+       <a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/"><img class="gimg" src="./image/pubg.jpeg" alt="PUBG"></a>
+       <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"><img class="gimg" src="./image/CSGO.jpg" alt="CSGO"></a>
+       <a href="https://store.epicgames.com/en-US/p/dauntless"><img class="gimg" src="./image/dauntless.jpg" alt="dauntles"></a>
+       <a href="https://store.steampowered.com/app/1085660/Destiny_2/"><img class="gimg" src="./image/destiny 2.jpg" alt="destiny 2"></a>
+       <a href="https://store.epicgames.com/en-US/p/valorant"><img class="gimg" src="./image/valorant.jpeg" alt="valorant"></a>
+       <a href="https://store.epicgames.com/en-US/p/rocket-league"><img class="gimg" src="./image/rocket league.jpeg" alt="rocket league"></a>
+    
+     
+      
+      
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">&copy;</a>
+    </footer>
+
+    <script>
+      function addToCart(gameName) {
+          // Get the existing cart items from local storage
+          var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+          // Add the selected game to the cart
+          cartItems.push(gameName);
+  
+          // Save the updated cart items to local storage
+          localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  
+          // Optionally, you can redirect to the cart page or display a message
+          alert(gameName + ' added to the cart!');
+      }
+   </script>
+
+  </body>
+</html>

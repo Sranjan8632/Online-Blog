@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Red Panda</title>
+    <link rel="stylesheet" href="style/style.css" />
+    
+   
+</head>
+
+
+
+  <body>
+    <header>
+      <div class="banner">
+        
+      </div>
+    </header>
+    <nav class="stic">
+      <a href="index.html" target="_self">Home</a>
+      <a href="games.html" target="_self">Games</a>
+      <a href="gblogs.html" target="_self">Blogs</a>
+      <a href="favourites.html" target="_self">Favourites</a>
+      <a href="cart.html" target="_self">Cart</a>
+      <a href="about-me.html" target="_blank">About Me</a>
+      <button  type="button" onclick="signup()"> Sign Up</button>
+       <input class="p" type="email" id="email" name="email" placeholder="Email">
+    
+    </nav>
+    <main>
+       <a href=""><img  class="mainimg" src="./image/111.jpg" alt="normal"></a>
+       <a href=""><img class="mainimg"  src="./image/222.jpg" alt="normal2"></a>
+       <a href="setup.html"><img class="mainimg" src="./image/333.jpg" alt="normal3"></a>
+     
+      
+      
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">&copy;</a>
+    </footer>
+
+    <script>
+      function signup() {
+      // Get the email input value
+      var email = document.getElementById('email').value;
+
+      // Check if the email is valid (you might want to enhance this validation)
+      if (isValidEmail(email)) {
+        // Perform any additional actions, e.g., send the email to your server
+        alert('Thanks for signing up! Get ready for a Daily Dose of Gaming Excitement Dilivered straight to your Inbox.');
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    }
+
+    function isValidEmail(email) {
+      // Basic email validation (you may want to use a more robust solution)
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+
+    
+    </script>
+
+  </body>
+</html>
